@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ADD</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="salir">SALIR</string>
+    <string name="username">userName</string>
+    <string name="oponente">OPONENTE</string>
+    <string name="victorias">VICTORIAS:</string>
+    <string name="vs">VS</string>
+    <string name="derrotas">DERROTAS:</string>
+    <string name="t">TÚ</string>
+    <string name="elige_tu_jugada">ELIGE TU JUGADA</string>
+    <string name="volver_a_jugar">VOLVER A JUGAR</string>
+</resources>

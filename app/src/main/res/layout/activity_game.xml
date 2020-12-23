@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skyr"
+    android:stretchColumns="*"
+    tools:context=".Game">
+
+    <TableRow android:background="#272B33">
+
+        <Button
+            android:id="@+id/buttonLogout"
+            style="@style/Basic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonbord"
+            android:gravity="center"
+            android:scaleType="fitEnd"
+            android:text="@string/salir" />
+
+        <TextView
+            android:id="@+id/textUser"
+            style="@style/Basic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:text="@string/username" />
+
+        <ImageView
+            android:id="@+id/imageUser"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:padding="10dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/user" />
+
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:padding="10dp"
+            app:srcCompat="@drawable/howto" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textOponente"
+            style="@style/OpTu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:text="@string/oponente" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="0"
+        android:background="#40CC0000">
+
+        <ImageButton
+            android:id="@+id/assOp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/assassinrs" />
+
+        <ImageButton
+            android:id="@+id/dragOp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/dragonrs" />
+
+        <ImageButton
+            android:id="@+id/dragboOp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:alpha="0.5"
+            android:background="@android:color/transparent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/dragonbornrs" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="0"
+        android:background="#60000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vic"
+                style="@style/BasicBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/victorias" />
+
+            <TextView
+                android:id="@+id/nVic"
+                style="@style/BasicBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textVS"
+            style="@style/BasicBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/vs" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/der"
+                style="@style/BasicBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/derrotas" />
+
+            <TextView
+                android:id="@+id/nDer"
+                style="@style/BasicBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/OpTu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:text="@string/t" />
+
+    </TableRow>
+
+    <TableRow android:layout_weight="0">
+
+        <ImageButton
+            android:id="@+id/assUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:background="#4033B5E5"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/assassinrs" />
+
+        <ImageButton
+            android:id="@+id/dragUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="#4033B5E5"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/dragonrs" />
+
+        <ImageButton
+            android:id="@+id/dragboUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:background="#4033B5E5"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:srcCompat="@drawable/dragonbornrs" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/choose"
+            style="@style/OpTu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:background="#2E2E2E"
+            android:gravity="center"
+            android:text="@string/elige_tu_jugada" />
+
+    </TableRow>
+
+</TableLayout>
